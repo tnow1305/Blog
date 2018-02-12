@@ -5,3 +5,21 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.main {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-left-emblem {
+    margin-top: 8px;
+    position: absolute;
+}
+
+.bottom-right-emblem {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,107 @@
+.section-articles {
+    position: relative;
+    padding: 64px 0 64px 0;
+    overflow: hidden;
+}
+
+.section-articles__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articles-column {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.3s;
+}
+
+.articles-column:hover {
+    transition: 0.3s;
+}
+
+.articles-links {
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.articles-links:after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -16px;
+    right: -16px;
+    bottom: 0;
+    z-index: -1;
+    transition: .3s;
+    border-bottom-color: transparent;
+}
+
+.articles-links:hover:after {
+    background: #faf8ee;
+    border-bottom: 2px solid #ffd600;
+}
+
+.articles-links:visited,
+.articles-links:focus,
+.articles-links:link {
+    text-decoration: none;
+    color: black;
+}
+
+/* TODO: Remove it in the future */
+/*.articles-links:hover .article-header {*/
+    /*box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .25);*/
+/*}*/
+
+.article-header {
+    position: relative;
+    width: 100%;
+    height: 243px;
+    background: no-repeat center center / cover;
+    transition: box-shadow .5s;
+}
+
+.section-articles__time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #ffd600;
+    position: absolute;
+    bottom: 11px;
+    left: -10px;
+    padding: 8px;
+}
+
+.articles__header-text, .articles__paragraph-text {
+    display: flex;
+    align-items: stretch;
+    margin: 16px 0 12px 0;
+}
+
+.articles__paragraph-text {
+    margin-top: 12px;
+}
+
+@media(max-width: 991px) {
+    .section-articles__content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .section-articles__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .articles-column {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

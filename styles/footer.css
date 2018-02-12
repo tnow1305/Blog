@@ -26,18 +26,20 @@
 }
 
 .contact-information {
+    display: flex;
+    align-items: center;
     margin-right: 40px;
 }
 
 .contact-information__icon {
     width: 21px;
+    height: 21px;
     vertical-align: text-bottom;
     fill: white;
 }
 
 .contact-information__text {
     margin-left: 14px;
-    vertical-align: text-bottom;
 }
 
 @media(max-width: 768px) {

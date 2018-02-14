@@ -70,4 +70,8 @@
     .contact-information__text {
         vertical-align: middle;
     }
+
+    .contact-information {
+        margin-right: 0;
+    }
 }

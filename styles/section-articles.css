@@ -9,6 +9,11 @@
     flex-wrap: wrap;
 }
 
+.section-articles__content:before,
+.section-articles__content:after {
+    content: none;
+}
+
 .articles-column {
     display: flex;
     flex-direction: column;
@@ -52,11 +57,6 @@
     color: black;
 }
 
-/* TODO: Remove it in the future */
-/*.articles-links:hover .article-header {*/
-    /*box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .25);*/
-/*}*/
-
 .article-header {
     position: relative;
     width: 100%;
@@ -86,6 +86,19 @@
 
 .articles__paragraph-text {
     margin-top: 12px;
+}
+
+.contact-information__text,
+.contact-information__text:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-information__text:visited,
+.contact-information__text:focus,
+.contact-information__text:link {
+    color: white;
+    text-decoration: none;
 }
 
 @media(max-width: 991px) {

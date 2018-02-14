@@ -1,0 +1,113 @@
+.single-article__header {
+    display: flex;
+    align-items: flex-end;
+    height: 315px;
+    width: 100%;
+    margin-top: 60px;
+    position: relative;
+    background: no-repeat center center / cover;
+}
+
+.section-articles__time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #ffd600;
+    position: absolute;
+    padding: 8px;
+    left: 40px;
+    bottom: -20px;
+}
+
+.single-article__content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.single-article__container {
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.contact-information__text,
+.contact-information__text:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-information__text:visited,
+.contact-information__text:focus,
+.contact-information__text:link {
+    color: white;
+    text-decoration: none;
+}
+
+.single-article__container h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.17;
+    margin: 48px 0 14px 0;
+}
+
+.single-article__container p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.single-article__container img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.single-article__container h2 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.single-article__container ul {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.single-article__container blockquote {
+    height: auto;
+    display: block;
+    background-color: #faf8ee;
+    border-left: 1px solid #ffd600;
+    padding: 24px;
+    margin-bottom: 32px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.single-article__container blockquote:before,
+.single-article__container blockquote:after {
+    content: '"';
+}
+
+.single-article__container h1 + p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media(max-width: 425px) {
+    .single-article__container h1 {
+        font-size: 21px;
+    }
+
+    .single-article__container h1 + p {
+        font-size: 16px;
+    }
+
+    .single-article__container {
+        padding: 0 20px;
+    }
+
+    .section-articles__time {
+        left: 20px;
+    }
+}

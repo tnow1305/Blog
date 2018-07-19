@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.header__logo {
+    width: 80px;
+}
+
 .header__media-links {
     display: flex;
     justify-content: space-between;
